@@ -22,7 +22,7 @@ fieldset, legend, p, select, table, th, td, tr, textarea, button, form, figure, 
 
 /* 2)a링크 */
 a {color: #222; text-decoration: none;}
-a:hover {color: #2698cb;}
+a:hover {color: var(--pink400);}
 
 .d-none {display: none;}
       
