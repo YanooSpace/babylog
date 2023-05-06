@@ -23,8 +23,8 @@
 
 <body>
 
-    <!-- 닷홈 php서버이기때문에 이거 사용하면 된다 ?  -->
-    <? include "header.html"; ?>
+    <div id ="header"></div>
+
     
     <main>
         <div class="menu">
@@ -176,7 +176,16 @@
         </div>
         <!-- //content -->
     </main>
+
+    <div id="footer"></div>
     
-    <? include "footer.html"; ?>
+    <script>
+        $(function(){
+            $("#header").load(header.html);
+            $("#footer").load(header.html);
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+ 
 </body>
 </html>
