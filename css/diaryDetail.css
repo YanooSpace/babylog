@@ -1,0 +1,309 @@
+/* 공통------------------------------------ */
+.d-none {
+    display: none;
+  }
+  
+  /* 배너영역 */
+  .banner{
+    height: 6rem;
+  }
+  
+  /* 공통------------------------------------ */
+main {
+    width: 100%;
+}
+
+.feed{
+    display: flex;
+    justify-content: center;
+    padding: 5% 2%;
+
+}
+
+.feed_wrap {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 3%;
+    box-shadow:5px 5px 30px rgba(0, 0, 0, 0.3); ;
+   
+}
+.feed_wrap > div {
+    width: 100%;
+    gap: 2%;
+ }
+
+ /* 피드 - 프로필 영역  */
+.profile {
+    display: flex;
+    width: 100%;
+    background-color: var(--white);
+    margin-bottom: 3%;
+}
+.profile .profile_img{
+    width: 100px;
+    height: 100px;
+}
+.profile .profile_img a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .profile_img a:hover img{
+    border: 3px solid var(--pink300);
+}
+
+.profile .profile_img a img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.profile .profile_info{
+    padding: 20px 0;
+}
+.profile .profile_info > div{
+    gap: 1%;
+}
+.profile .profile_info .id{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* 이미지 영역 */
+.photo {
+    max-width: 100%;
+    /* height: auto; */
+    max-height: 640px;
+    background-color: #fff;
+    object-fit: cover ;
+    overflow: hidden;
+}
+
+.photo_wrap img{
+    width: 100%;
+
+}
+
+/* 뷰어 - 아이콘 영역 */
+.icon{
+   padding: 15px 0;
+}
+.icon_wrap{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+/* 왼쪽 아이콘 */
+.icon_wrap .left_icon {
+    width: auto;
+    display: flex;
+    gap: 18%;
+    font-size: 2rem;
+    align-items: center;
+    margin-left: 24px;
+}
+.icon_wrap .left_icon a {
+    color: var(--black300);
+}
+.icon_wrap .left_icon .l_icon1 a{
+    color: var(--pink400);
+}
+/* 오른쪽 아이콘 */
+
+.icon_wrap .right_icon{
+    width: auto;
+    justify-content: center;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.icon_wrap .right_icon a{
+    color: var(--blue400);
+}
+
+/* 피드 - 텍스트 영역 */
+.feed_text{
+    background-color: #fff;
+    padding: 30px 20px;
+}
+.text_wrap {
+    margin-bottom: 40px;
+}
+
+.text_wrap > div {
+    margin-bottom: 30px;
+    
+}
+.t_title h2 {
+    font-size: 1.8rem;
+}
+.t_text p {
+    font-size: 0.8rem;
+}
+
+
+
+.day {
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.day span {
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+/* feed- 수정, 삭제, 목록 btn */
+.feed_btn{
+    padding: 1rem 0 2.4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--blue200);
+    
+}
+
+.feed_btn div {
+    margin-right:0.5rem ;
+}
+.feed_btn div > button {
+    padding: 0.8rem 3rem;
+    border-radius: 0.7rem;
+    display: block;
+    background-color: var(--white);
+}
+/* 각 버튼 스타일 주기 */
+.feed_btn .edt_btn button{
+    border: 1px solid var(--pink400);
+    color: var(--pink500);
+}
+.feed_btn .del_btn button{
+    border: 1px solid var(--blue400);
+    color: var(--blue500);
+}
+.feed_btn .list_btn button{
+    border: 1px solid var(--green400);
+    color: var(--green500);
+}
+
+/* 각 버튼 - 호버 */
+.feed_btn .edt_btn button:hover{
+    background-color: var(--pink400);
+    color: var(--white);
+}
+.feed_btn .del_btn button:hover{
+    background-color:  var(--blue400);
+    color: var(--white);
+}
+.feed_btn .list_btn button:hover{
+    background-color: var(--green400);
+    color: var(--white);
+}
+
+
+
+
+/* 코멘트 영역 ========================= */
+
+.comment_wrap {
+    padding: 1rem 1.8rem;
+}
+.comment_wrap > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+
+}
+.comment_wrap > div > div {
+    display: flex;
+    align-items: center;
+}
+.comment_wrap > div .co_profile{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    margin-right: 0.5rem;
+}
+.comment_wrap > div .co_profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+}
+.comment_wrap > div .co_profile img:hover{
+    border: 2px solid var(--pink300);
+}
+.comment_wrap > div .co_text{
+    width: 74%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--blue200);
+}
+.comment_wrap > div .co_text p {
+    padding-left: 10px;
+}
+.comment_wrap > div .co_time {
+    width: 10%;
+    height: 50px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-start;
+}
+
+/* 코멘트 */
+
+
+/* 태그 -------------------------------------*/
+.tag_icon > div button{
+display: flex;
+align-items: center;
+padding: 0.8rem 2rem;
+margin-right: 0.6rem;
+background-color: var(--blue200);
+border-radius: 10px;
+color: var(--white);
+}
+
+.tag_icon > div button img {
+width: 1.2rem;
+margin-right: 0.2rem;
+}
+.tag_icon > div button p {
+font-size: 1rem;
+line-height: 1.2rem;
+text-shadow: 1px 1px 1px var(--black500);
+}
+
+/* 각 태그별 속성  */
+.tag_icon > .tag1 button{
+background-color: var(--green400) ;
+}
+.tag_icon > .tag2 button{
+background-color: var(--pink400) ;
+}
+.tag_icon > .tag3 button{
+background-color: var(--blue400) ;
+}
+.tag_icon > .tag4 button{
+background-color: var(--yello400) ;
+}
+/* 각 태그별 오버  */
+.tag_icon > .tag1 button:hover{
+background-color: var(--green500) ;
+}
+.tag_icon > .tag2 button:hover{
+background-color: var(--pink500) ;
+}
+.tag_icon > .tag3 button:hover{
+background-color: var(--blue500) ;
+}
+.tag_icon > .tag4 button:hover{
+background-color: var(--yello500) ;
+}

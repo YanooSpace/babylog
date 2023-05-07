@@ -1,0 +1,10 @@
+.board_title div > .free a {
+	background-color: var(--pink400);
+	border: none;
+	color: var(--white);
+}
+.board_title div > .free a:hover {
+	background-color: var(--pink500);
+	border: none;
+	color: var(--white);
+}

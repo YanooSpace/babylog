@@ -1,0 +1,5 @@
+.board_title .tag .info a {
+	color: var(--white);
+	background-color: var(--pink400);
+	border: none;
+}

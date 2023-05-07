@@ -1,0 +1,6 @@
+.board_title .tag .free a {
+	color: var(--white);
+	background-color: var(--pink400);
+	border: none;
+}
+
