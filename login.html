@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>육아일기</title>
+
+<!-- style -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/login.css">
+
+
+<!-- 슬릭 -->
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+<!-- 웹아이콘 -->
+<script src="https://kit.fontawesome.com/e76461f593.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <main>
+       <div id="login">
+        <div class="container">
+            <div class="login_wrap">
+                <!-- Heading -->
+                <div class="item logo">
+                  <div class="logo">
+                    <a href="main.html"><img src="icon/logo_1.png" alt=""></a>
+                  </div>
+                </div>
+                
+                <!-- Form -->
+                <form  action="" method="post">
+                  <!-- 이메일 -->
+                  <div class="first-input input__block first-input__block">
+                     <input type="email" placeholder="Email" class="input" id="email"   />
+                  </div>
+                  <!-- 비밀번호 -->
+                  <div class="input__block">
+                     <input type="password" placeholder="Password" class="input" id="password"    />
+                  </div>
+                  <!-- 로그인 버튼 -->
+                  <button class="login_btn">
+                    Login
+                  </button>
+                </form>
+
+
+                <!-- separator : 가운데 선  -->
+                <div class="separator">
+                  <p>또는</p>
+                </div>
+
+                <!-- 로그인 api -->
+                <div class="api_wrap">
+                  <!-- 카카오버튼 -->
+                  <button class="kakao_btn">
+                    <i class="fa-solid fa-comment"></i>
+                    <div class="kakao">KAKAO로 로그인 하기</div>
+                  </button>
+                  
+                  <!-- 네이버 버튼 -->
+                  <button class="naver_btn">
+                    <img src="icon/naver_icon.png" alt="네이버로고">
+                    <div class="naver">NAVER로 로그인 하기</div>
+                  </button>
+                  
+                </div>
+                <!-- Links -->
+                <ul class="links">
+                  <li>
+                    <a href="#" id="find_pwd">비밀번호 찾기</a>
+                  </li>
+                  <li>
+                    <a href="#" id="find_id">아이디 찾기</a>
+                  </li>
+                  <li>
+                    <a href="signUp.html" id="signup">회원가입</a>
+                  </li>
+                </ul>
+                
+              </div>
+            
+        </div>
+        <!-- container -->
+        </div>
+        <!-- //login -->
+    </main>
+  
+
+    <footer id="footer">
+      <div class="container">
+          <div class="foot_inner">
+              <div class="foot_logo">
+                  <div>
+                  <a href="main.html"><img src="icon/logo_2_blue.png" alt="로고"></a>
+              </div>
+              </div>
+              <div class="foot_nav">
+                  <hr>
+                  <ul>
+                      <li><a href="diary.html">육아일기</a></li>                    
+                      <li><a href="communityFree.html">커뮤니티</a></li>                    
+                      <li><a href="shop.html">쇼핑몰</a></li>                    
+                      <li><a href="newsGov.html">뉴스</a></li>                    
+                      <li><a href="mypage.html">마이페이지</a></li>                    
+                  </ul>
+                  <hr>         
+              </div>
+              <div class="foot_icon">
+                  <ul>
+                      <li>
+                          <a href="https://twitter.com/">
+                          <i class="fa-brands fa-twitter"></i>
+                          <span>트위터</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.instagram.com/">
+                          <i class="fa-brands fa-instagram"></i>
+                          <span>인스타그램</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.facebook.com">
+                          <i class="fa-brands fa-facebook"></i>
+                          <span>페이스북</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+  
+      </div>
+  </footer>
+
+<!-- script -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+</body>
+</html>
